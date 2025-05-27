@@ -48,6 +48,11 @@ alias sudo='sudo -E '
 alias sync-status='watch -d grep -e Dirty: -e Writeback: /proc/meminfo'
 
 #------------------------------
+# Kitty fix for ssh
+#------------------------------
+[ "$TERM" = "xterm-kitty" ] && alias ssh='kitty +kitten ssh'
+
+#------------------------------
 # ShellFuncs
 #------------------------------
 # -- coloured manuals
