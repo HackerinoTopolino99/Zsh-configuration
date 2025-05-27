@@ -46,6 +46,7 @@ alias paru='paru --color=auto --removemake'
 alias rm='rm -iv'
 alias sudo='sudo -E '
 alias sync-status='watch -d grep -e Dirty: -e Writeback: /proc/meminfo'
+alias vimfm='vifm'
 
 #------------------------------
 # Kitty fix for ssh
