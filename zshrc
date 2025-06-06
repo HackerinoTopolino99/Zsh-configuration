@@ -154,14 +154,14 @@ prompt_hackerinotopolino_setup () {
         local branch
         branch=$(git symbolic-ref --short HEAD 2>/dev/null)
         if [[ -n "$branch" ]]; then
-          echo "%K{#248721}%F{#175616}${SEP_RIGHT}%K{#248721}%F{white} $branch  %K{default}%F{#248721}${SEP_RIGHT}%k"
+          echo "%K{#246424}%F{#175616}${SEP_RIGHT}%K{#246424}%F{white} $branch  %K{default}%F{#246424}${SEP_RIGHT}%k"
         else
           echo "%k%F{#175616}${SEP_RIGHT}"
         fi
       }
     
       # Definizione del prompt su una riga con separatori
-      PS1='%K{#0a260a}%F{white} %n@%m %K{#175616}%F{#0a260a}'$SEP_RIGHT   # user@host → separatore
+      PS1='%K{#174017}%F{white} %n@%m %K{#175616}%F{#174017}'$SEP_RIGHT   # user@host → separatore
       PS1+="%K{#175616}%F{white} %c "   # working dir → separatore
       PS1+='$(parse_git_branch)'                                   # git branch + sep (solo se c'è)
     
