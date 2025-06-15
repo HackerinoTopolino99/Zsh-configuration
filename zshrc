@@ -134,7 +134,7 @@ prompt_hackerinotopolino_setup () {
         if [[ -n "$branch" ]]; then
           echo "%K{#5a0a0a}%F{#500000}${SEP_RIGHT}%K{#5a0a0a}%F{white} $branch  %K{default}%F{#5a0a0a}${SEP_RIGHT}%k"
         else
-          echo "%k%F{#50000}${SEP_RIGHT}"
+          echo "%k%F{#500000}${SEP_RIGHT}"
         fi
       }
     
