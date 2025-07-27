@@ -107,6 +107,8 @@ zstyle ':vcs_info:git*' formats "%{${fg[cyan]}%}[%{${fg[green]}%}%s%{${fg[cyan]}
 
 prompt_hackerinotopolino_setup () {
   setopt prompt_subst
+  
+  fortune | cowsay | lolcat --spread 1.0
 
   if [[ $TERM = "linux" ]]; then
     if [[ -n "$SSH_CLIENT"  ||  -n "$SSH2_CLIENT" ]]; then 
@@ -114,8 +116,6 @@ prompt_hackerinotopolino_setup () {
     else
       p_host='%F{green}%M%f'
     fi
-
-    fortune | cowsay | lolcat --spread 1.0
 
     if [[ "$UID" = 0 ]]; then
       PS1="%F{blue}[%f%F{red}%n%f%F{blue}@%f${p_host} %F{red}%c%f%F{blue}]#%f "
